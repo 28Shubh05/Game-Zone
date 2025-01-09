@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tic_tac_design"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".add_player_tic_tac_toe">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_gravity="clip_horizontal"
+            android:background="@drawable/blue_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_players"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="30dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/bluish_color"
+                    android:alpha="0.5"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/user_01_img"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1st Player"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginStart="20dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="30dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/bluish_color"
+                    android:alpha="0.5">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/user_01_img"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2nd Player"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginStart="20dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Name of player"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/name_of_player_1"/>
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/blue_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Name of player"
+                    android:id="@+id/name_of_player_2"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_tic_tac_toe"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bluish_color"
+                app:cornerRadius="15dp"
+                android:text="Start"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
